@@ -184,7 +184,7 @@ class SaltManage(object):
 
 
 def manage_test():
-    url = 'https://sdevsalt01.hk.gomo.com:8000'
+    url = ''
     username, password = 'kenasel','kenasel'
     man = SaltManage(url, username, password)
     #print(man.get_all_key())
@@ -197,7 +197,7 @@ def manage_test():
 
 if __name__ == '__main__':
     manage_test()
-    # url = 'https://sdevsalt01.hk.gomo.com:8000'
+    # url = ''
     # username, password = 'kenasel','kenasel'
     # salt = SaltApi(username,password,url)
     #print(salt.salt_logout())
@@ -207,8 +207,6 @@ if __name__ == '__main__':
     #print(salt.salt_run("*","test.ping"))
     #print(salt.salt_events())
     #print(salt.salt_hook())
-    #print(salt.salt_keys_get("sdevsalt01.hk.gomo.com"))
-    #print(salt.salt_keys_post("sdevsalt01.hk.gomo.com"))
     #print(salt.salt_ws())
     #print(salt.salt_stats())
     #print(salt.test("*", 'grains.item'))
